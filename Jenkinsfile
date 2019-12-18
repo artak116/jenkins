@@ -1,6 +1,6 @@
 def TERRAFORM_REPO = "https://github.com/artak116/jenkins.git"
 
-libraryResource 'vars/aws.groovy'
+load 'vars/aws.groovy'
 
 node(){
   // stage("SCM"){
