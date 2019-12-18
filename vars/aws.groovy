@@ -1,1 +1,1 @@
-def BB = "Gago"
+BB = "Gago"
