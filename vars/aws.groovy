@@ -1,3 +1,1 @@
-#!/usr/bin/env groovy
-
-def BB = "Gago"
+String BB = "Gago"
