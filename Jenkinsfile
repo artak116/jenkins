@@ -1,5 +1,7 @@
 def TERRAFORM_REPO = "https://github.com/artak116/jenkins.git"
 
+load 'vars/aws.groovy'
+
 node(){
   // stage("SCM"){
   // checkout([$class: 'GitSCM', branches: [[name: "${TERRAFORM_BRANCH}"]], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: "${CLUSTER}"]], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/artak116/jenkins.git']]])
@@ -8,6 +10,7 @@ node(){
 
   stage("tf plan"){
     print "planing"
+    print BB
     sleep 15
   }
 
