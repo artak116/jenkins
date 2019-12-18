@@ -1,1 +1,1 @@
-String BB = "Gago"
+def BB = "Gago"
